@@ -11,6 +11,9 @@ import 'normalize.css/normalize.css' // 仅使用import 'normalize.css'会报错
  * https://simulatedgreg.gitbooks.io/electron-vue/content/cn/using_css_frameworks.html
  */
 
+import Pagination from '@/components/Pagination/index'
+Vue.component('pagination', Pagination)
+
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false

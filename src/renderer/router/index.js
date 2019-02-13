@@ -5,15 +5,19 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'landing-page',
-    //   component: require('@/components/LandingPage').default
-    // },
     {
       path: '/',
-      name: 'home',
-      component: require('@/views/home').default
+      redirect: '/cnode'
+    },
+    {
+      path: '/cnode',
+      name: 'cnode',
+      component: require('@/views/Cnode').default
+    },
+    {
+      path: '/cnode/detail/:id',
+      name: 'cnodeDetail',
+      component: require('@/components/Content/detail').default
     },
     {
       path: '*',

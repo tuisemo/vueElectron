@@ -19,6 +19,7 @@ export default {
 <style lang='less' scoped>
 .wrap {
   display: block;
+  margin-bottom: 50px;
   .main-container,
   .side-bar {
     position: relative;

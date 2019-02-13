@@ -5,10 +5,18 @@
       <div>
         <a href="/" />
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-          <el-menu-item index="1">精华</el-menu-item>
-          <el-menu-item index="2">分享</el-menu-item>
-          <el-menu-item index="3">问答</el-menu-item>
-          <el-menu-item index="4">招聘</el-menu-item>
+          <el-menu-item index="1">
+            精华
+          </el-menu-item>
+          <el-menu-item index="2">
+            分享
+          </el-menu-item>
+          <el-menu-item index="3">
+            问答
+          </el-menu-item>
+          <el-menu-item index="4">
+            招聘
+          </el-menu-item>
         </el-menu>
       </div>
     </el-col>
@@ -17,13 +25,13 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       activeIndex: '1'
     }
   },
   methods: {
-    handleSelect () {
+    handleSelect() {
       console.log(1)
     }
   }
