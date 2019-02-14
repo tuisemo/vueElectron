@@ -18,7 +18,6 @@ service.interceptors.request.use(config => {
   //     // 让每个请求携带token-- ['X-Token']为自定义key 请根据实际情况自行修改
   //     config.headers['X-Token'] = getToken()
   //   }
-  console.log(config)
   return config
 }, error => {
   // Do something with request error
@@ -28,7 +27,7 @@ service.interceptors.request.use(config => {
 
 // respone interceptor
 service.interceptors.response.use(
-  response => response,
+  response => response.data,
   error => {
     console.log('err' + error) // for debug
     Message({

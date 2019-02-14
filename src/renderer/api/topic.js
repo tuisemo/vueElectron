@@ -7,3 +7,10 @@ export function getTopics(data) {
     params: data
   })
 }
+
+export function getTopicDetail(id = 0) {
+  return request({
+    url: `https://cnodejs.org/api/v1/topic/${id}`,
+    method: 'get'
+  })
+}

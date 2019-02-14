@@ -20,6 +20,11 @@ export default new Router({
       component: require('@/components/Content/detail').default
     },
     {
+      path: '/douban',
+      name: 'douban',
+      component: require('@/views/Douban').default
+    },
+    {
       path: '*',
       redirect: '/'
     }

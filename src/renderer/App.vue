@@ -21,13 +21,27 @@ export default {
 </script>
 
 <style>
-  body{
-    background: #f6f6f6;
-  }
+body {
+  height: 100%;
+  background: #f6f6f6;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 </style>

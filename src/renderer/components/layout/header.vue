@@ -4,15 +4,15 @@
     <el-col :lg="16" :md="20" :sm="22">
       <div>
         <a href="/" />
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-          <el-menu-item index="1">
-            精华
+        <el-menu :default-active="activeIndex" router mode="horizontal" @select="handleSelect">
+          <el-menu-item index="/cnode">
+            Cnode 社区
           </el-menu-item>
-          <el-menu-item index="2">
-            分享
+          <el-menu-item index="/douban">
+            豆瓣电影
           </el-menu-item>
-          <el-menu-item index="3">
-            问答
+          <el-menu-item index="/oneRead">
+            ONE 阅读
           </el-menu-item>
           <el-menu-item index="4">
             招聘
@@ -27,12 +27,12 @@
 export default {
   data() {
     return {
-      activeIndex: '1'
+      activeIndex: '/cnode'
     }
   },
   methods: {
     handleSelect() {
-      console.log(1)
+      // console.log(1)
     }
   }
 }
@@ -45,5 +45,8 @@ export default {
     .el-menu.el-menu--horizontal{
         border-bottom:none;
     }
+}
+a{
+  text-decoration: none;
 }
 </style>

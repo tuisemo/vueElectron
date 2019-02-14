@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import * as api from '@/api/user'
+import * as api from '@/api/topic'
 export default {
   props: {
     tab: {
@@ -55,8 +55,8 @@ export default {
     },
     getTopics() {
       this.loading = true
-      api.getTopics({ tab: this.tab, page: 1, limit: 20 }).then(res => {
-        this.topicList = res.data.data
+      api.getTopics({ tab: this.tab, page: this.params.pageNum, limit: 20 }).then(res => {
+        this.topicList = res.data
         this.loading = false
       }).catch(error => {
         this.loading = false
